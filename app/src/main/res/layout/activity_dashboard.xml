@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94BABF"
+    android:padding="24dp"
+    tools:context=".DashboardActivity">
+
+    <!-- Judul Dashboard -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang di Dashboard"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnMenu"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <!-- Tombol Menu -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lihat Menu"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        app:backgroundTint="@color/biru_custom"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Tombol Promo -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPromo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lihat Promo"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@id/btnMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Tombol Logout -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/btnPromo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
